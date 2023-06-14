@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Simple_Login_Page</string>
+
+    <string name="Login_usernameText">Username</string>
+    <string name="Login_passwordText">Username</string>
+    <string name="Login_tvRegister">If you have not registered ?</string>
+    <string name="Login_buttonText">Click here</string>
+    <string name="Login_buttonTextGoogle">Sign in with Google</string>
+
+</resources>

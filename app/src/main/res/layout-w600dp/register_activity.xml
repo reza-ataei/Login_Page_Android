@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/Register_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="@color/gray2"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="@id/Register_layout"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput_name_Register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="50dp"
+        android:hint="Full Name"
+        app:endIconMode="clear_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:startIconDrawable="@drawable/ic_username"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Register"
+        app:boxStrokeColor="@color/myColor"
+        android:textColorHint="@color/gray"
+        app:startIconTint="@color/gray"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_name_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:textDirection="ltr"
+            android:textColor="@color/gray2"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput_phone_Register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="50dp"
+        android:hint="Phone Number"
+        app:endIconMode="clear_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:startIconDrawable="@drawable/ic_phone"
+        app:layout_constraintTop_toBottomOf="@+id/TextInput_name_Register"
+        app:boxStrokeColor="@color/myColor"
+        android:textColorHint="@color/gray"
+        app:startIconTint="@color/gray"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_phone_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:textDirection="ltr"
+            android:textColor="@color/gray2"
+            android:inputType="phone"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput_username_Register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/Login_usernameText"
+        app:endIconMode="clear_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:startIconDrawable="@drawable/ic_username_register"
+        app:layout_constraintTop_toBottomOf="@+id/TextInput_phone_Register"
+        app:boxStrokeColor="@color/myColor"
+        android:textColorHint="@color/gray"
+        app:startIconTint="@color/gray"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_username_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:textDirection="ltr"
+            android:textColor="@color/gray2"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput_password_Register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="50dp"
+        android:hint="Password"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:startIconDrawable="@drawable/ic_password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInput_username_Register"
+        android:textColorHint="@color/gray"
+        app:startIconTint="@color/gray"
+        app:endIconTint="@color/gray2"
+        app:counterTextColor="@color/gray2"
+        app:boxStrokeColor="@color/myColor"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_password_Register"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="ltr"
+            android:textColor="@color/gray2"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInput_Cpassword_Register"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="35dp"
+        android:hint="Confirm Password"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:startIconDrawable="@drawable/ic_confirm"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextInput_password_Register"
+        android:textColorHint="@color/gray"
+        app:startIconTint="@color/gray"
+        app:endIconTint="@color/gray2"
+        app:counterTextColor="@color/gray2"
+        app:boxStrokeColor="@color/myColor"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_Cpassword_Register"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textDirection="ltr"
+            android:textColor="@color/gray2"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_register_Register"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/TextInput_Cpassword_Register"
+        tools:ignore="MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/checkBox_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:buttonTint="@color/myColor"/>
+
+        <TextView
+            android:id="@+id/TextButton_register_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Agree with team $ condition"
+            android:textStyle="bold"
+            android:textColor="@color/gray2"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Button_submit_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:text="Create Account"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout_register_Register"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/myColor"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
